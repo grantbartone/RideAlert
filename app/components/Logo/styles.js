@@ -5,7 +5,6 @@ const imageWidth = Dimensions.get('window').width / 2;
 
 export default EStyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
