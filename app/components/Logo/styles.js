@@ -12,7 +12,7 @@ export default EStyleSheet.create({
     color: '$white',
     fontSize: 28,
     letterSpacing: -0.5,
-    marginTop: 30,
+    marginTop: 27,
     marginBottom: 15,
     fontWeight: '600',
   },
