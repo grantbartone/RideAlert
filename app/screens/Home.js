@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StatusBar, KeyboardAvoidingView, Keyboard, Platform, Animated, Easing } from 'react-native';
+import { StatusBar, Keyboard, Platform, Animated, Easing } from 'react-native';
 
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
@@ -12,10 +12,10 @@ class Home extends Component {
     super(props);
     this.state = {
       offsetY: new Animated.Value(0),
-    }
+    };
   }
 
-  componentDidMount () {
+  componentDidMount() {
     const name = Platform.OS === 'ios' ? 'Will' : 'Did';
     this.keyboardDidShowListener = Keyboard.addListener(
       `keyboard${name}Show`,
@@ -34,35 +34,33 @@ class Home extends Component {
 
   keyboardWillShow = () => {
     console.log('Keyboard showing.');
-    Animated.timing(
-      this.state.offsetY,
-      { toValue: -210,
-        duration: ANIMATION_DURATION,
-        easing: Easing.bezier(0.23, 1, 0.32, 1),
-      }
-    ).start();
+    Animated.timing(this.state.offsetY, {
+      toValue: -210,
+      duration: ANIMATION_DURATION,
+      easing: Easing.bezier(0.23, 1, 0.32, 1),
+    }).start();
   };
 
   keyboardWillHide = () => {
     console.log('Keyboard hiding.');
-    Animated.timing(
-      this.state.offsetY,
-      { toValue: 0,
-        duration: ANIMATION_DURATION,
-        easing: Easing.bezier(0.23, 1, 0.32, 1),
-      }
-    ).start();
+    Animated.timing(this.state.offsetY, {
+      toValue: 0,
+      duration: ANIMATION_DURATION,
+      easing: Easing.bezier(0.23, 1, 0.32, 1),
+    }).start();
   };
 
-  render () {
+  render() {
     return (
       <Container>
         <StatusBar translucent={false} barStyle="light-content" />
-        <Animated.View style={{
-          transform: [{translateY: this.state.offsetY}],
-          width: '100%',
-          alignItems: 'center',
-        }}>
+        <Animated.View
+          style={{
+            transform: [{ translateY: this.state.offsetY }],
+            width: '100%',
+            alignItems: 'center',
+          }}
+        >
           <Logo />
           <SearchDestination />
         </Animated.View>
