@@ -4,9 +4,9 @@ import { SearchBar } from 'react-native-elements';
 import styles from './styles';
 
 class SearchDestination extends Component {
-  handleChangeText() {
+  handleChangeText = () => {
     console.log('Search text changed.');
-  }
+  };
 
   render() {
     return (

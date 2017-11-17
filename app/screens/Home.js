@@ -15,7 +15,7 @@ class Home extends Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     const name = Platform.OS === 'ios' ? 'Will' : 'Did';
     this.keyboardDidShowListener = Keyboard.addListener(
       `keyboard${name}Show`,
@@ -25,12 +25,12 @@ class Home extends Component {
       `keyboard${name}Hide`,
       this.keyboardWillHide,
     );
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     this.keyboardDidShowListener.remove();
     this.keyboardDidHideListener.remove();
-  }
+  };
 
   keyboardWillShow = () => {
     console.log('Keyboard showing.');
