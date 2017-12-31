@@ -1,0 +1,88 @@
+{
+    "destination": {
+        "lat": 37.7838857,
+        "lng": -122.4228045,
+        "eta_seconds": null,
+        "address": "24 Willie Mays Plaza, San Francisco, CA 94107",
+    },
+    "cost_estimates": [
+        {
+            "ride_type": "lyft_line",
+            "estimated_duration_seconds": 1213,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 475,
+            "primetime_percentage": "0%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 475,
+            "display_name": "Lyft Line",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        },
+        {
+            "ride_type": "uber_pool",
+            "estimated_duration_seconds": 1313,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 425,
+            "primetime_percentage": "25%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 1561,
+            "display_name": "Uber Pool",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        },
+        {
+            "ride_type": "lyft",
+            "estimated_duration_seconds": 913,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 1755,
+            "primetime_percentage": "25%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 1052,
+            "display_name": "Lyft",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        },
+        {
+            "ride_type": "uber",
+            "estimated_duration_seconds": 913,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 1855,
+            "primetime_percentage": "25%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 1561,
+            "display_name": "Uber",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        },
+        {
+            "ride_type": "lyft_plus",
+            "estimated_duration_seconds": 913,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 2355,
+            "primetime_percentage": "25%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 1561,
+            "display_name": "Lyft Plus",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        },
+        {
+            "ride_type": "uber_dexule",
+            "estimated_duration_seconds": 913,
+            "estimated_distance_miles": 3.29,
+            "estimated_cost_cents_max": 2455,
+            "primetime_percentage": "25%",
+            "currency": "USD",
+            "estimated_cost_cents_min": 1561,
+            "display_name": "Uber Deluxe",
+            "primetime_confirmation_token": null,
+            "cost_token": null,
+            "is_valid_estimate": true
+        }
+    ]
+}

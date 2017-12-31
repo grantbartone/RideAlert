@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { SearchBar } from 'react-native-elements';
 
 import styles from './styles';
 
-class SearchDestination extends Component {
-  handleChangeText = () => {
+const SearchDestination = () => {
+  const handleChangeText = () => {
     console.log('Search text changed.');
   };
 
-  render() {
-    return (
-      <SearchBar
-        containerStyle={styles.containerStyle}
-        inputStyle={styles.inputStyle}
-        lightTheme
-        clearIcon
-        onChangeText={this.handleChangeText}
-        placeholder="Ride Destination"
-      />
-    );
-  }
-}
+  return (
+    <SearchBar
+      containerStyle={styles.containerStyle}
+      inputStyle={styles.inputStyle}
+      lightTheme
+      clearIcon
+      onChangeText={() => handleChangeText()}
+      placeholder="Ride Destination"
+    />
+  );
+};
 
 export default SearchDestination;
