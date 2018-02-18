@@ -7,7 +7,7 @@ const Logo = () => (
   <View style={styles.container}>
     <Text style={styles.headertext}>RIDE ALERT</Text>
     <Image source={require('./images/siren.gif')} resizeMode="contain" style={styles.logo} />
-    <Text style={styles.text}>Have your ride show up when you do.</Text>
+    <Text style={styles.text}>Set a Ride Alert. Get a ride when you need it.</Text>
   </View>
 );
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StatusBar, Keyboard, Platform, Animated, Easing } from 'react-native';
+import { View, StatusBar, Keyboard, Platform, Animated, Easing } from 'react-native';
 
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
@@ -67,6 +67,12 @@ class Home extends Component {
       </Container>
     );
   }
+
+  // render() {
+  //   return (
+  //     <SearchDestination />
+  //   );
+  // }
 }
 
 export default Home;

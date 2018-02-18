@@ -22,7 +22,7 @@ export default EStyleSheet.create({
   },
   text: {
     color: '$white',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: -0.5,
     marginTop: 15,
     fontWeight: '600',
